@@ -14,7 +14,7 @@ from json2xml import json2xml
 from json2xml.utils import readfromstring
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://tctjohlxkunisg:e0e485e93cd1856926c8a6775ab749727c8f269b8fac1bc897b2c82010060f06@ec2-44-193-188-118.compute-1.amazonaws.com:5432/dbbsjht26niguf"#"postgresql://postgres:intelwalk@localhost:5432/pokebase"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://tctjohlxkunisg:e0e485e93cd1856926c8a6775ab749727c8f269b8fac1bc897b2c82010060f06@ec2-44-193-188-118.compute-1.amazonaws.com:5432/dbbsjht26niguf"#"postgresql://postgres:intelwalk@localhost:5432/pokebase"
 db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 
