@@ -102,6 +102,7 @@ def insert_types(parent_id, type):
 
 loaddatavar = 0
 
+
 if(loaddatavar == 0):
     loaddata()
     loaddatavar = 1
