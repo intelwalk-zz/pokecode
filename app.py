@@ -104,7 +104,7 @@ loaddatavar = 0
 
 
 if(loaddatavar == 0):
-    loaddata()
+    #loaddata()
     loaddatavar = 1
 
 @app.route('/', methods=['GET'])
